@@ -8,5 +8,6 @@ Rails.application.routes.draw do
 
   resources :leaderboard, only: [:index]
 
-
+  resources :sessions, only: [:create]
+  resources :registrations, only: [:create]
 end
