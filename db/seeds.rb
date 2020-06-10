@@ -2,8 +2,9 @@
     User.create!(
       name: Faker::Name.name, 
       email: Faker::Internet.email, 
-      password: "password", 
-      points: rand(1..10)*10, 
+      password_digest: "password", 
+      points: rand(1..10)*10,
+      avatar: Faker::Avatar.image, 
     )
 end
 
