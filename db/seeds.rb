@@ -1,10 +1,11 @@
-10.times do 
-    User.create!(
-      name: Faker::Name.name, 
-      email: Faker::Internet.email, 
-      password: "password", 
-      points: rand(1..10)*10, 
-    )
+10.times do
+  User.create!(
+    name: Faker::Name.name,
+    email: Faker::Internet.email,
+    password_digest: "passwords",
+    points: rand(1..10)*10,
+    avatar: Faker::Avatar.image,
+  )
 end
 
 AssistanceRequest.create!([{

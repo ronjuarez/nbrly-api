@@ -5,6 +5,7 @@ class RegistrationsController < ApplicationController
             name: params["user"]["name"],
             email: params["user"]["email"],
             password: params["user"]["password"],
+            avatar: params["user"]["avatar"]
         )
         if user
             session[:user_id] = user.id
