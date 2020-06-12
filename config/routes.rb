@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   resource :users, only: [:show]
 
-  resources :requests, only: [:new, :show, :index, :destroy, :update]
+  resources :requests, only: [:create, :show, :index, :destroy, :update]
 
   resources :leaderboard, only: [:index]
 

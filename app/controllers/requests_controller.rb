@@ -4,7 +4,7 @@ class RequestsController < ApplicationController
         render json: {status: 'SUCCESS', message: 'loaded ARs', body:@requests},status: :ok
     end 
 
-    def create 
+    def create
       @requests = AssistanceRequest.create!(requests_params)
       if @requests
         render json: @requests
