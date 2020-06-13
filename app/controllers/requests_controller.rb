@@ -5,7 +5,9 @@ class RequestsController < ApplicationController
     end 
 
     def create
+       
       @requests = AssistanceRequest.create!(requests_params)
+      @requests.save
       if @requests
         render json: @requests
       else
@@ -29,7 +31,7 @@ class RequestsController < ApplicationController
     private
 
     def requests_params
-      params.permit(:delivery_address, :items, :completed_by, :reimbursement_type)
+      params.require(:requests).permit(:delivery_address, :items, :completed_by, :reimbursement_type, :user_id, :volunteer_completed_task, :requester_confirmed_completion, :volunteer_id)
     end 
 
     def requests
