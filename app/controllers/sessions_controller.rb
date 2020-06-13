@@ -27,6 +27,7 @@ class SessionsController < ApplicationController
             render json: {
                 logged_in: false
             }
+        end
     end
 
     def logout
