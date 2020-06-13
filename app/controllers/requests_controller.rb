@@ -21,6 +21,11 @@ class RequestsController < ApplicationController
         render json: {status: 'SUCCESS', message: 'loaded ARs', body:@request},status: :ok
     end
 
+    def update
+      @request = AssistanceRequest.find params[:id]
+      @request.update(volunteer_completed_task: params[:request][:volunteer_completed_task])
+      render json: {status: 'SUCCESS', message: 'loaded ARs', body:@request},status: :ok
+    end
     
     def destroy
       @request.destroy
@@ -31,7 +36,7 @@ class RequestsController < ApplicationController
     private
 
     def requests_params
-      params.require(:requests).permit(:delivery_address, :items, :completed_by, :reimbursement_type, :user_id, :volunteer_completed_task, :requester_confirmed_completion, :volunteer_id)
+      params.require(:requests).permit!
     end 
 
     def requests

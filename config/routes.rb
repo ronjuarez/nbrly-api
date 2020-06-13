@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root to: 'requests#index'
 
-  resource :users, only: [:show]
+  resources :users, only: [:index, :show, :update]
 
   resources :requests, only: [:create, :show, :index, :destroy, :update]
 
