@@ -1,4 +1,4 @@
-module CurrentUserConcer
+module CurrentUserConcern
     extend ActiveSupport::Concern
 
     included do 
