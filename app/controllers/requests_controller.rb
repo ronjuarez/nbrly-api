@@ -31,7 +31,7 @@ class RequestsController < ApplicationController
     private
 
     def requests_params
-      params.require(:requests).permit(:delivery_address, :items, :completed_by, :reimbursement_type, :user_id, :volunteer_completed_task, :requester_confirmed_completion, :volunteer_id)
+      params.require(:requests).permit!
     end 
 
     def requests
