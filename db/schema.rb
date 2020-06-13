@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_12_195555) do
+ActiveRecord::Schema.define(version: 2020_06_13_043556) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2020_06_12_195555) do
     t.boolean "requester_confirmed_completion", default: false
     t.bigint "user_id"
     t.bigint "volunteer_id"
-    t.text "items", default: [], array: true
+    t.string "items", default: [], array: true
     t.date "complete_by"
     t.string "reimbursement_type"
     t.index ["user_id"], name: "index_assistance_requests_on_user_id"
