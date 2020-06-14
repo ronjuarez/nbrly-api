@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2020_06_13_043556) do
     t.bigint "user_id"
     t.bigint "volunteer_id"
     t.string "items", default: [], array: true
-    t.date "complete_by"
+    t.datetime "complete_by"
     t.string "reimbursement_type"
     t.index ["user_id"], name: "index_assistance_requests_on_user_id"
     t.index ["volunteer_id"], name: "index_assistance_requests_on_volunteer_id"
