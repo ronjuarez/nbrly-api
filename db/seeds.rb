@@ -10,6 +10,8 @@ end
 
 AssistanceRequest.create!([{
     delivery_address: "500 Kingston Rd, Toronto, ON M4L 1V3",
+    latitude: 43.678000,
+    longitude: -79.302740,
     volunteer_completed_task: true,
     requester_confirmed_completion: false,
     items: ["milk", "sugar", "eggs"],
@@ -20,6 +22,8 @@ AssistanceRequest.create!([{
 },
 {
     delivery_address: "234 Willow Ave, Toronto, ON M4E 3K7",
+    latitude: 43.677071,
+    longitude: -79.288361,
     volunteer_completed_task: false,
     requester_confirmed_completion: false,
     user_id: 3,
@@ -29,6 +33,8 @@ AssistanceRequest.create!([{
 },
 {
     delivery_address: "48 St Clair Ave W, Toronto, ON M4V 2Z2",
+    latitude: 43.687920,
+    longitude: -79.396190,
     volunteer_completed_task: true,
     requester_confirmed_completion: true,
     user_id: 5,
@@ -39,6 +45,8 @@ AssistanceRequest.create!([{
 },
 {
     delivery_address: "26 Goodwood Park Cres, East York, ON M4C 2G5",
+    latitude: 43.694848,
+    longitude: -79.299151,
     volunteer_completed_task: true,
     requester_confirmed_completion: true,
     user_id: 3,
@@ -49,6 +57,8 @@ AssistanceRequest.create!([{
 },
 {
     delivery_address: "1974 Queen St E, Toronto, ON M4L 1H8",
+    latitude: 43.669928,
+    longitude: -79.301631,
     volunteer_completed_task: true,
     requester_confirmed_completion: true,
     user_id: 3,
@@ -59,7 +69,9 @@ AssistanceRequest.create!([{
     
 },
 {
-	delivery_address: "150 Dan Leckie Way, Toronto, ON M5V 0E3",
+  delivery_address: "150 Dan Leckie Way, Toronto, ON M5V 0E3",
+  latitude: 43.639456,
+  longitude: -79.39855,
 	volunteer_completed_task: true,
 	requester_confirmed_completion: false,
 	user_id: 2,
@@ -70,7 +82,9 @@ AssistanceRequest.create!([{
 
 },
 {
-	delivery_address: "25 John St., Toronto, ON M5V 3G6",
+  delivery_address: "25 John St., Toronto, ON M5V 3G6",
+  latitude: 43.70114,
+  longitude: -79.517271,
 	volunteer_completed_task: false,
 	requester_confirmed_completion: false,
 	user_id: 4,
@@ -81,7 +95,9 @@ AssistanceRequest.create!([{
 
 },
 {
-	delivery_address: "1 Yonge St., Toronto, ON M5E 1W7",
+  delivery_address: "1 Yonge St., Toronto, ON M5E 1W7",
+  latitude: 43.6423204,
+  longitude: -79.374318,
 	volunteer_completed_task: false,
 	requester_confirmed_completion: false,
 	user_id: 7,
@@ -92,7 +108,9 @@ AssistanceRequest.create!([{
 },
 
 {
-	delivery_address: "300 Front St., Toronto, ON M5V 0E9",
+  delivery_address: "300 Front St., Toronto, ON M5V 0E9",
+  latitude: 43.644201,
+  longitude: -79.389288,
 	volunteer_completed_task: false,
 	requester_confirmed_completion: false,
 	user_id: 1,
@@ -102,7 +120,9 @@ AssistanceRequest.create!([{
 	
 },
 {
-	delivery_address: "300 Front St., Toronto, ON M5V 0E9",
+  delivery_address: "234 Willow Ave, Toronto, ON M4E 3K7",
+  latitude: 43.678124,
+  longitude: -79.288759,
 	volunteer_completed_task: true,
 	requester_confirmed_completion: false,
 	user_id: 9,
@@ -114,6 +134,8 @@ AssistanceRequest.create!([{
 },
 {
   delivery_address: '8 Oliver Mews, Toronto, ON M4E 3E4',
+  latitude: 43.6695988,
+  longitude: -79.3162344,
   volunteer_completed_task: true,
   requester_confirmed_completion: false,
   user_id: 5,
@@ -125,6 +147,8 @@ AssistanceRequest.create!([{
 
 {
   delivery_address: "300 Silver Birch Ave, Toronto, ON M4E 3L5",
+  latitude: 43.67794,
+  longitude: -79.287531,
   volunteer_completed_task: false,
   requester_confirmed_completion: false,
   user_id: 5,
@@ -134,7 +158,9 @@ AssistanceRequest.create!([{
   reimbursement_type: "cash"
 },
 {
-  delivery_address: "300 Silver Birch Ave, Toronto, ON M4E 3L5",
+  delivery_address: "48 St Clair Ave, W Toronto, ON M4V 2Z2",
+  latitude: 43.687916,
+  longitude: -79.396194,
   volunteer_completed_task: false,
   requester_confirmed_completion: true,
   user_id: 5,
@@ -145,6 +171,8 @@ AssistanceRequest.create!([{
 
 {
   delivery_address: "717 Broadview Ave, Toronto, ON M4K 2P5",
+  latitude: 43.675163,
+  longitude: -79.357468,
   volunteer_completed_task: true,
   requester_confirmed_completion: true,
   user_id: 5,
@@ -155,6 +183,8 @@ AssistanceRequest.create!([{
 
 {
   delivery_address: "1210 Don Mills Rd, North York, ON M3B 3N9",
+  latitude: 43.740082,
+  longitude: -79.344696,
   volunteer_completed_task: false,
   requester_confirmed_completion: false,
   user_id: 5,

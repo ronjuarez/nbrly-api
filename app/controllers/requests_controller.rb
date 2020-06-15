@@ -23,7 +23,7 @@ class RequestsController < ApplicationController
 
     def update
       @request = AssistanceRequest.find params[:id]
-      @request.update(volunteer_completed_task: params[:request][:volunteer_completed_task])
+      @@request.update(volunteer_completed_task: params[:request][:volunteer_completed_task], volunteer_id: params[:request][:volunteer_id])
       render json: {status: 'SUCCESS', message: 'loaded ARs', body:@request},status: :ok
     end
     
