@@ -1,6 +1,6 @@
 class RequestsController < ApplicationController
     def index
-        @requests = AssistanceRequest.where(volunteer_id: nil).order("complete_by")
+        @requests = AssistanceRequest.order("complete_by")
         render json: {status: 'SUCCESS', message: 'loaded ARs', body:@requests},status: :ok
     end 
 
