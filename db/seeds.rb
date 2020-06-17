@@ -3,7 +3,7 @@
       name: Faker::Name.name, 
       email: Faker::Internet.email, 
       password_digest: "password", 
-      points: rand(1..10)*10,
+      points: rand(1..10)*100,
       avatar: Faker::Avatar.image, 
     )
 end
