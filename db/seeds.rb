@@ -17,7 +17,7 @@ AssistanceRequest.create!([{
     items: ["milk", "sugar", "eggs"],
     user_id: 1,
     volunteer_id: 4,
-    complete_by: "2020-06-15",
+    complete_by: "2020-06-20",
     reimbursement_type: "cash" 
 },
 {
@@ -40,7 +40,7 @@ AssistanceRequest.create!([{
     user_id: 5,
     volunteer_id: 9,
     items: ["water bottles"],
-    complete_by: "2020-06-18",
+    complete_by: "2020-06-19",
     reimbursement_type: "e-transfer" 
 },
 {
@@ -51,7 +51,7 @@ AssistanceRequest.create!([{
     requester_confirmed_completion: true,
     user_id: 3,
     items: ["milk"],
-    complete_by: "2020-06-12",
+    complete_by: "2020-06-25",
     reimbursement_type: "cash" 
     
 },
@@ -64,7 +64,7 @@ AssistanceRequest.create!([{
     user_id: 3,
     volunteer_id: 8,
     items: ["strawberries", "blueberries"],
-    complete_by: "2020-06-16",
+    complete_by: "2020-06-19",
     reimbursement_type: "cash" 
     
 },
@@ -102,7 +102,7 @@ AssistanceRequest.create!([{
 	requester_confirmed_completion: false,
 	user_id: 7,
 	items: ["apples", "cilantro", "guacamole", "tomatoes"],
-	complete_by: "2020-06-20",
+	complete_by: "2020-06-18",
 	reimbursement_type: "cheque"
 
 },
@@ -128,7 +128,7 @@ AssistanceRequest.create!([{
 	user_id: 9,
 	volunteer_id: 3,
 	items: ["apples", "cilantro", "guacamole", "tomatoes"],
-	complete_by: "2020-06-10",
+	complete_by: "2020-06-18",
 	reimbursement_type: "cheque"
 
 },
@@ -141,7 +141,7 @@ AssistanceRequest.create!([{
   user_id: 5,
   volunteer_id: 7,
   items: ["5 bananas", "3 apples", "5 oranges"],
-  complete_by: "2020-07-21",
+  complete_by: "2020-07-18",
   reimbursement_type: "cash"
 },
 
