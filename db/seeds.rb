@@ -21,7 +21,7 @@ AssistanceRequest.create!([{
     reimbursement_type: "cash" 
 },
 {
-    delivery_address: "234 Willow Ave, Toronto, ON M4E 3K7",
+    delivery_address: "237 Willow Ave, Toronto, ON M4E 3K7",
     latitude: 43.677071,
     longitude: -79.288361,
     volunteer_completed_task: false,
@@ -102,7 +102,7 @@ AssistanceRequest.create!([{
 	requester_confirmed_completion: false,
 	user_id: 7,
 	items: ["apples", "cilantro", "guacamole", "tomatoes"],
-	complete_by: "2020-06-18",
+	complete_by: "2020-06-20",
 	reimbursement_type: "cheque"
 
 },
