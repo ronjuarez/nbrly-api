@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2020_06_14_215807) do
     t.bigint "user_id"
     t.bigint "volunteer_id"
     t.string "items", default: [], array: true
-    t.datetime "complete_by"
+    t.date "complete_by"
     t.string "reimbursement_type"
     t.float "latitude"
     t.float "longitude"
