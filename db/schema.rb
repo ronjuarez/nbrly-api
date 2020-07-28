@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_14_211016) do
+ActiveRecord::Schema.define(version: 2020_07_20_034305) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 2020_07_14_211016) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "avatar"
-    t.boolean "fb_user", default: false
+    t.integer "deliveries", default: 0
   end
 
   add_foreign_key "assistance_requests", "users"

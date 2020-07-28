@@ -10,6 +10,7 @@ class UsersController < ApplicationController
 
     def update
     @user = User.find params[:id]
+    @user.update(deliveries: params[:user][:deliveries])
     @user.update(points: params[:user][:points])
     render json: {status: 'SUCCESS', message: 'loaded ARs', body:@user},status: :ok
     end
